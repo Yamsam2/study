@@ -7,7 +7,7 @@
         private static final int DATABASE_VERSION = 1;
         private static final String TABLE_NAME = "test_table";
         private static final String COLUMN_KEY = "_key";
-        private static final String COLUMN_NAME = "name";
+        private static final String COLUMN_NAME = "name"; 
         private static final String COLUMN_AGE = "age";
 
 

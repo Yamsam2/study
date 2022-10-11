@@ -61,3 +61,31 @@
           db.execSQL("SELECT * FROM test_table");
       }
   }
+
+
+
+## SQLite DB에서 가져오기 (cursor 사용)  
+
+  
+curcor에 테이블 넣기  
+sqlDB = resultDB.getReadableDatabase();  
+Cursor cursor;  
+cursor = sqlDB.rawQuery("SELECT * FROM log_library;", null);  
+
+  
+Curosr 이동방법  
+  
+ 
+cursor.moveToFirst() : Cursor를 제일 첫번째 행(Row)으로 이동 시킨다.  
+cursor.moveToNext() : Cursor를 다음 행(Row)으로 이동 시킨다.  
+cursor.moveToPrevious() : Cursor를 이전 행(Row)으로 이동 시킨다.  
+cursor.moveToPosition(position) : Cursor를 해당 Position 행(Row)으로 이동 시킨다.  
+cursor.moveToLast() : Cursor를 마지막 행(Row)으로 이동 시킨다.  
+
+
+Cursor 변수에 담기  
+원하는 row에 Cursor위치시키고,  
+변수 = cursor.getString(index값)  
+
+
+

@@ -70,7 +70,7 @@
 curcor에 테이블 넣기  
 sqlDB = resultDB.getReadableDatabase();  
 Cursor cursor;  
-cursor = sqlDB.rawQuery("SELECT * FROM log_library;", null);  
+cursor = sqlDB.rawQuery("SELECT * FROM log_library;", null);   
 
   
 Curosr 이동방법  

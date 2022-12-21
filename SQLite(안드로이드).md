@@ -1,4 +1,4 @@
-# SQLite DB생성 페이지 예제    
+# SQLite DB생성 페이지 예제     
   
 
     public class TestDB extends SQLiteOpenHelper {

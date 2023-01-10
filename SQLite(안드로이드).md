@@ -24,7 +24,7 @@
                         + " (" + COLUMN_KEY + " INTEGER PRIMARY KEY AUTOINCREMENT, "
                         + COLUMN_NAME + " TEXT, "
                         + COLUMN_AGE + " TEXT); ";
-                db.execSQL(query);
+                db.execSQL(query); 
             }
         }
         @Override

@@ -86,7 +86,7 @@ cursor.moveToLast() : Cursor를 마지막 행(Row)으로 이동 시킨다.
 
 Cursor 변수에 담기  
 원하는 row에 Cursor위치시키고,  
-변수 = cursor.getString(index값)  
+변수 = cursor.getString(index값)   
 
 
 

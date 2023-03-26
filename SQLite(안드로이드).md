@@ -61,7 +61,7 @@
           db.execSQL("SELECT * FROM test_table");
       }
   }
-
+ 
 
 
 ## SQLite DB에서 가져오기 (cursor 사용)    

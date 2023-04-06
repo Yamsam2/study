@@ -39,7 +39,7 @@
             ContentValues cv = new ContentValues();
 
             cv.put(COLUMN_KEY, key);
-            cv.put(COLUMN_NAME, name);
+            cv.put(COLUMN_NAME, name); 
             cv.put(COLUMN_AGE, age);
 
             long result = db.insert(TABLE_NAME, null, cv);

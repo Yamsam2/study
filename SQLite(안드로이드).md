@@ -21,7 +21,7 @@
         public void onCreate(SQLiteDatabase db) {
             {
                 String query = "CREATE TABLE " + TABLE_NAME
-                        + " (" + COLUMN_KEY + " INTEGER PRIMARY KEY AUTOINCREMENT, "
+                        + " (" + COLUMN_KEY + " INTEGER PRIMARY KEY AUTOINCREMENT, " 
                         + COLUMN_NAME + " TEXT, "
                         + COLUMN_AGE + " TEXT); ";
                 db.execSQL(query); 

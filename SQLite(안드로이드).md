@@ -1,7 +1,7 @@
 # SQLite DB생성 페이지 예제        
    
 
-    public class TestDB extends SQLiteOpenHelper {
+    public class TestDB extends SQLiteOpenHelper { 
         private Context context;
         private static final String DATABASE_NAME = "test.db";
         private static final int DATABASE_VERSION = 1;

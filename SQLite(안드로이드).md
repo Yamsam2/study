@@ -18,7 +18,7 @@
         } 
  
         @Override
-        public void onCreate(SQLiteDatabase db) {
+        public void onCreate(SQLiteDatabase db) { 
             {
                 String query = "CREATE TABLE " + TABLE_NAME
                         + " (" + COLUMN_KEY + " INTEGER PRIMARY KEY AUTOINCREMENT, " 

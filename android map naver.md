@@ -70,20 +70,6 @@
         polygon.setColor(Color.GREEN);
         polygon.setMap(mNaverMap);
 
-/*        List<LatLng> coords = new ArrayList<>();
-        Collections.addAll(coords,
-                new LatLng(35.145263, 129.066096),
-                new LatLng(35.145469, 129.067247),
-                new LatLng(35.144960, 129.065993),
-                new LatLng(35.144986, 129.067507)
-        );
-        polygon.setCoords(coords);
-
-        coords.set(0, new LatLng(37.5734571, 126.975335));
-    // 아직 반영되지 않음
-        polygon.setCoords(coords);
-    // 반영됨*/
-
         PolylineOverlay polyline = new PolylineOverlay();
         polyline.setCoords(Arrays.asList(
                 new LatLng(35.145263, 129.066096),

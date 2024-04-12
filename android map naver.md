@@ -60,7 +60,7 @@
           db.execSQL(updateQuery);
           db.execSQL("SELECT * FROM test_table");
       }
-  }
+  
  
 
 

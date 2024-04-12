@@ -1,5 +1,7 @@
 # 네이버 맵 생성 페이지 예제       
-   
+
+
+## onCreate 안에   
 ```java
 @Override
     public void onMapReady(@NonNull NaverMap naverMap) {
@@ -47,6 +49,53 @@
         mapView_auto.getMapAsync(this);
 ```
 
+## 폴리곤 생성
+```java
+    //뉴뉴
+    public void polygonSquare() {
+
+        Marker marker = new Marker();
+        marker.setPosition(new LatLng(35.145263, 129.066096));
+        marker.setMap(mNaverMap);
 
 
+        //폴리곤 생성 테스트
+        PolygonOverlay polygon = new PolygonOverlay();
+        polygon.setCoords(Arrays.asList(
+                new LatLng(35.145263, 129.066096),
+                new LatLng(35.144960, 129.065993),
+                new LatLng(35.144986, 129.067507),
+                new LatLng(35.145469, 129.067247)
+        ));
+        polygon.setColor(Color.GREEN);
+        polygon.setMap(mNaverMap);
+
+/*        List<LatLng> coords = new ArrayList<>();
+        Collections.addAll(coords,
+                new LatLng(35.145263, 129.066096),
+                new LatLng(35.145469, 129.067247),
+                new LatLng(35.144960, 129.065993),
+                new LatLng(35.144986, 129.067507)
+        );
+        polygon.setCoords(coords);
+
+        coords.set(0, new LatLng(37.5734571, 126.975335));
+    // 아직 반영되지 않음
+        polygon.setCoords(coords);
+    // 반영됨*/
+
+        PolylineOverlay polyline = new PolylineOverlay();
+        polyline.setCoords(Arrays.asList(
+                new LatLng(35.145263, 129.066096),
+                new LatLng(35.145469, 129.067247),
+                new LatLng(35.144960, 129.065993),
+                new LatLng(35.144986, 129.067507)
+        ));
+        polyline.setWidth(10);
+        polyline.setMap(mNaverMap);
+    }
+
+//함수 실행은 onMapReady 안쪽에
+
+```
 

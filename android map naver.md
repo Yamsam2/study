@@ -67,6 +67,9 @@
                 new LatLng(35.144986, 129.067507),
                 new LatLng(35.145469, 129.067247)
         ));
+        //16진수 컬러 직접 입력 시
+        //polygon.setColor(Color.parseColor("#80847223"));
+        //자바 기본색상
         polygon.setColor(Color.GREEN);
         polygon.setMap(mNaverMap);
 

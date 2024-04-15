@@ -88,3 +88,30 @@
 
 ```
 
+## 중앙 점(좌표)을 이용하여 사각형 생성
+
+
+```java
+    double latChange = metersToLatitude(radiusInMeters);
+    double lngChange = metersToLongitude(centerPoint.latitude, radiusInMeters);
+    
+    // 정사각형의 네 꼭짓점 계산
+    LatLng[] squarePoints = new LatLng[4];
+    squarePoints[0] = new LatLng(centerPoint.latitude + latChange, centerPoint.longitude - lngChange);
+    squarePoints[1] = new LatLng(centerPoint.latitude + latChange, centerPoint.longitude + lngChange);
+    squarePoints[2] = new LatLng(centerPoint.latitude - latChange, centerPoint.longitude + lngChange);
+    squarePoints[3] = new LatLng(centerPoint.latitude - latChange, centerPoint.longitude - lngChange);
+
+
+    private double metersToLatitude(double meters) {
+        return meters / 111111.0;
+    }
+    private double metersToLongitude(double latitude, double meters) {
+        double latRadians = Math.toRadians(latitude);
+        return meters / (111111.0 * Math.cos(latRadians));
+    }
+```
+
+
+
+

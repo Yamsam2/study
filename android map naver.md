@@ -9,7 +9,7 @@
         mNaverMap.setLocationSource(locationSource);
         ActivityCompat.requestPermissions(this, PERMISSIONS, PERMISSION_REQUEST_CODE);
         UiSettings uiSettings = mNaverMap.getUiSettings();
-
+ 
         uiSettings.setScaleBarEnabled(false);
 
         LocationButtonView locationButtonView = findViewById(R.id.location);

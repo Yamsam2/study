@@ -4,7 +4,7 @@ clearAnimation*
 애니메이션 XML에 fillAfter="true" 가 되 있으면 애니메이션이 끝나더라도 마지막 프레임이 계속 남아있어  
 visibility = "gone", "invisible" 등의 작동이 안됨  
 false로 바꾸거나 clearAnimation()을 호출하자    
-  
+   
      
 엑티비티 모두 종료가 필요할 때(로그아웃 등)*     
 ActivityCompat.finishAffinity(this);     
@@ -16,7 +16,7 @@ String android_id = Settings.Secure.getString(this.getContentResolver(),Settings
     
   
   /*모든파일 관리 허용       
-  requestPermission에는 모든파일이 권한요청이 포함되어있지않기 때문에 Intent를 이용해서 요청해야됨    
+  requestPermission에는 모든파일이 권한요청이 포함되어있지않기 때문에 Intent를 이용해서 요청해야됨     
   startActivityForResult는 deprecated 되었기때문에 이제는Uri주소를 이용해서 기기 디바이스 화면으로 넘겨야함    
   */     
   if (Environment.isExternalStorageManager()){   

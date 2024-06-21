@@ -10,7 +10,7 @@ false로 바꾸거나 clearAnimation()을 호출하자
 ActivityCompat.finishAffinity(this);      
      
           
-안드로이드 고유 기기번호(ANDROID_ID) : 디바이스 초기화시 번호가 변경됨*                 
+안드로이드 고유 기기번호(ANDROID_ID) : 디바이스 초기화시 번호가 변경됨*                  
 String android_id = Settings.Secure.getString(this.getContentResolver(),Settings.Secure.ANDROID_ID);               
      
      

@@ -5,7 +5,7 @@ clearAnimation*
 visibility = "gone", "invisible" 등의 작동이 안됨  
 false로 바꾸거나 clearAnimation()을 호출하자    
    
-        
+         
 엑티비티 모두 종료가 필요할 때(로그아웃 등)*      
 ActivityCompat.finishAffinity(this);         
      

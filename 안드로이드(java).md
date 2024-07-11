@@ -15,7 +15,7 @@ String android_id = Settings.Secure.getString(this.getContentResolver(),Settings
         
       
   /*모든파일 관리 허용        
-  requestPermission에는 모든파일이 권한요청이 포함되어있지않기 때문에 Intent를 이용해서 요청해야됨      
+  requestPermission에는 모든파일이 권한요청이 포함되어있지않기 때문에 Intent를 이용해서 요청해야됨       
   startActivityForResult는 deprecated 되었기때문에 이제는Uri주소를 이용해서 기기 디바이스 화면으로 넘겨야함      
   if (Environment.isExternalStorageManager()){    
   }else{    

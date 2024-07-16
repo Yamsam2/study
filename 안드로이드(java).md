@@ -21,7 +21,7 @@ String android_id = Settings.Secure.getString(this.getContentResolver(),Settings
   }else{     
    Intent intent = new Intent();   
    intent.setAction(Settings.ACTION_MANAGE_APP_ALL_FILES_ACCESS_PERMISSION);  
-   Uri uri = Uri.fromParts("package", this.getPackageName(), null);   
+   Uri uri = Uri.fromParts("package", this.getPackageName(), null);    
    intent.setData(uri);   
     startActivity(intent);   
   }  

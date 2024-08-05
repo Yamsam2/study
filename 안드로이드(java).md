@@ -1,4 +1,4 @@
-   ## 안드로이드s 
+    ## 안드로이드s 
 
 clearAnimation*  
 애니메이션 XML에 fillAfter="true" 가 되 있으면 애니메이션이 끝나더라도 마지막 프레임이 계속 남아있어  

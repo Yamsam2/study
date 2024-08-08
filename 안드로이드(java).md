@@ -13,7 +13,7 @@ ActivityCompat.finishAffinity(this);
 안드로이드 고유 기기번호(ANDROID_ID) : 디바이스 초기화시 번호가 변경됨*                      
 String android_id = Settings.Secure.getString(this.getContentResolver(),Settings.Secure.ANDROID_ID);                  
          
-       
+        
   /*모든파일 관리 허용        
   requestPermission에는 모든파일이 권한요청이 포함되어있지않기 때문에 Intent를 이용해서 요청해야됨         
   startActivityForResult는 deprecated 되었기때문에 이제는Uri주소를 이용해서 기기 디바이스 화면으로 넘겨야함       

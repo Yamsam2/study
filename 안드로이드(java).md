@@ -19,7 +19,7 @@ String android_id = Settings.Secure.getString(this.getContentResolver(),Settings
   startActivityForResult는 deprecated 되었기때문에 이제는Uri주소를 이용해서 기기 디바이스 화면으로 넘겨야함       
   if (Environment.isExternalStorageManager()){     
   }else{     
-   Intent intent = new Intent();   
+   Intent intent = new Intent();    
    intent.setAction(Settings.ACTION_MANAGE_APP_ALL_FILES_ACCESS_PERMISSION);  
    Uri uri = Uri.fromParts("package", this.getPackageName(), null);     
    intent.setData(uri);   

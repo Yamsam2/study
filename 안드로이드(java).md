@@ -8,7 +8,7 @@ false로 바꾸거나 clearAnimation()을 호출하자
             
 엑티비티 모두 종료가 필요할 때(로그아웃 등)*          
 ActivityCompat.finishAffinity(this);                  
-        
+         
                   
 안드로이드 고유 기기번호(ANDROID_ID) : 디바이스 초기화시 번호가 변경됨*                       
 String android_id = Settings.Secure.getString(this.getContentResolver(),Settings.Secure.ANDROID_ID);                     

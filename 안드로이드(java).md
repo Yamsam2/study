@@ -25,7 +25,7 @@ String android_id = Settings.Secure.getString(this.getContentResolver(),Settings
   }  
      
 
-     
+      
  * 테이블 레이아웃 동적으로 row 추가 하기 (vertical)*  
  ```java
 chartRowArr.clear(); 
